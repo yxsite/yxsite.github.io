@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #F3F5F3;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.quote-card{
+  width: 80%;
+  height: 35vh;
+  position: relative;
+  border-radius: 5px;
+  background: #11BC7F;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quote-card .left{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%)
+}
+.quote-card .right{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+}
+.quote-card i{
+  font-size: 2em;
+}
+.quote-content{
+  width: 90%;
+  height: 75%;
+  background: #F3F5F3;
+  border-radius: 5px;
+}
+.quote-content p{
+  font-size: 0.75em;
+  padding: 8px;
+  font-weight: 400;
+}
+.quote-card span{
+  margin-top: 10px;
+  font-weight: 500;
+  color: #F3F5F3;
+}
+button.generate{
+  margin-top: 35px;
+  width: 80%;
+  height: 50px;
+  background: #11BC7F;
+  border-radius: 4px;
+  border: none;
+  color: #F3F5F3;
+  font-weight: 700;
+  font-size: 0.8em;
+}

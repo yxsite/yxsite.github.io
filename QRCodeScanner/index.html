@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>QR Code Scanner/Reader</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="wrapper">
+      <div class="form">
+        <form>
+          <input type="file" class="finput"  hidden/>
+          <img src="./imgs/folder.png" alt="Please Upload An Existing QR Code">
+          <span>Click This Section To Upload</span>
+        </form>
+      </div>
+  </div>
+  <div class="popup error-noti">
+    <img src="./imgs/attention.png" alt="Error">
+    <p>Failed To Read The QR Code! </p>
+    <span class="error-close">&times;</span>
+  </div>
+  <div class="popup success-noti">
+    <img src="./imgs/checked.png" alt="Error">
+    <p>QR Code Read Successful! </p>
+    <span class="success-close">&times;</span>
+  </div>
+  <div class="contents">
+    <div class="qrcode-preview">
+      <img src="./imgs/test.png" alt="">
+    </div>
+    <div class="texts">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis architecto eveniet eius!</div>
+    <div class="btns">
+      <button class="copytext" onclick="copyText()">Copy</button>
+      <button class="go-back" onclick="contentClose()">Back</button>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>

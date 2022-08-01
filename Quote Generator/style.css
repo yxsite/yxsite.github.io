@@ -15,7 +15,7 @@ body{
 }
 .quote-card{
   width: 80%;
-  height: 35vh;
+  height: 250px;
   position: relative;
   border-radius: 5px;
   background: #11BC7F;

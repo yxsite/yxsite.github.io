@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="./style.css" type="text/css" media="all" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="panel">
+      <div class="title">
+        <h1>QR Code Generator</h1>
+      </div>
+      <div class="contents">
+        <textarea placeholder="Please Enter Your Contents" class="input"  onkeyup="generate()"></textarea>
+      </div>
+      <div class="options">
+        <div class="input-box">
+          <span>Color : </span>
+          <input type="color" value="#000000" class="color" onchange="generate()">
+        </div>
+        <div class="input-box">
+          <span>Background : </span>
+         <input type="color" value="#FFFFFF" class="bgcolor" onchange="generate()">
+        </div>
+        <select class="size-opt" onchange="generate()">
+          <option value="default">Size</option>
+          <option value="200x200">200*200</option>
+          <option value="1000x1000">1000*1000</option>
+          <option value="5000x5000">5000*5000</option>
+        </select>
+        <select class="margin-opt" onchange="generate()">
+          <option value="0">Margin</option>
+          <option value="10">10px</option>
+          <option value="20">20px</option>
+          <option value="50">50px</option>
+        </select>
+      </div>
+    </div>
+    <div class="result-area">
+      <div class="preview">
+        <img src="http://api.qrserver.com/v1/create-qr-code/?data=Hello%20World!&color=5aa2ff&size=200x200&format=svg" alt="Your QR Code" onerror="errorcode()">
+      </div>
+      <div class="download">
+        <a><button>Download</button></a>
+        <select class="format-opt">
+          <option value="png">PNG</option>
+          <option value="jpg">JPG</option>
+          <option value="jpeg">JPEG</option>
+          <option value="svg">SVG</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  
+  <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #D7E3FF;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper{
+  width: 90%;
+  height: 450px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+}
+.wrapper .panel{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .title h1{
+  font-size: 35px;
+  padding: 15px;
+  color: #333;
+}
+.wrapper .panel .contents{
+  width: 100%;
+}
+.wrapper .panel .contents textarea{
+  margin: 15px;
+  width: 85%;
+  height: 120px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 3px solid #DDD;
+  outline: none;
+}
+.wrapper .panel .contents textarea:focus{
+  transition: 0.3s;
+  border: 3px solid #5AA2FF;
+}
+.wrapper .panel .options{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.panel .options .input-box, .options select{
+  width: 40%;
+  height: 45px;
+  margin: 15px 0 0 15px;
+}
+.wrapper .options .input-box{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 80px;
+}
+.wrapper .options .input-box span{
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+.wrapper .options .input-box input{
+  width: 100%;
+  height: 43px;
+  border: none;
+  background: none;
+}
+.panel .options select{
+  outline: none;
+  padding-left: 5px;
+  font-weight: 500;
+}
+.wrapper .result-area{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .result-area .preview{
+  width: 250px;
+  height: 250px;
+  margin-top: 15px;
+}
+.wrapper .result-area .preview img{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.wrapper .result-area .download{
+  width: 100%;
+  height: 120px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.result-area .download button{
+  width: 180px;
+  height: 45px;
+  margin: 15px;
+  border: none;
+  background: #5AA2FF;
+  color: #F5F5F5;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.result-area .download button:hover{
+  transition: 0.15s;
+  background: #3375C9;
+}
+.result-area .download select{
+  height: 45px;
+  width: 75px;
+  padding-left: 5px;
+  outline: none;
+}
+
+@media screen and (max-width: 480px){
+  .wrapper{
+    flex-direction: column;
+    height: auto;
+  }
+  .wrapper .panel{
+    width: 100%;
+  }
+  .wrapper .panel .contents textarea{
+    width: 90%;
+    margin: 0;
+    margin-left: 5%;
+  }
+  .wrapper .result-area{
+    width: 100%;
+    margin: 25px;
+  }
+  .wrapper .result-area .download{
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+  .result-area .download select{
+    width: 180px;
+  }
+  .wrapper .title h1{
+    text-align: center;
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Scissors Paper Rock Game</title>
+  <link rel="stylesheet" href="./style.css" type="text/css" media="all" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="upper block">
+      <div class="btns">
+        <button class="scissorbtn">
+          <img src="./imgs/scissor.png" alt="scissor">
+        </button>
+        <button class="paperbtn">
+          <img src="./imgs/paper.png" alt="paper">
+        </button>
+        <button class="rockbtn">
+          <img src="./imgs/rock.png" alt="rock">
+        </button>
+      </div>
+    </div>
+    
+    <!-- show result area -->
+    <div class="result">
+      <div class="enemy">
+        <img src="./imgs/scissor.png" alt="" class="enemyShow">
+      </div>
+      <div class="text">
+        <h1></h1>
+      </div>
+      <div class="user">
+        <img src="./imgs/rock.png" alt="" class="userShow">
+      </div>
+    </div>
+    <!-- result area end -->
+    
+    <div class="lower">
+      <div class="btns">
+        <button onclick="myGame(1)" class="scissorbtn active">
+          <img src="./imgs/scissor.png" alt="scissor">
+        </button>
+        <button onclick="myGame(2)" class="paperbtn">
+          <img src="./imgs/paper.png" alt="paper">
+        </button>
+        <button onclick="myGame(3)" class="rockbtn">
+          <img src="./imgs/rock.png" alt="rock">
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="./main.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

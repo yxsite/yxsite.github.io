@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+}
+.wrapper{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #5960FF, #9EA4EA);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.upper{
+  transform: rotate(180deg)
+}
+.upper,.lower{
+  width: 85%;
+  height: 100px;
+  margin-top: 30px;
+}
+.upper .btns,.lower .btns{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.upper .btns button,.lower .btns button{
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+  border-radius: 5px;
+  background: #B1C4FF;
+  border: 3px dashed #F8F8F8;
+}
+button img{
+  width: 100%;
+}
+.lower button:hover{
+  border: 3px solid #3D47B1;
+}
+.result{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+.result .enemy{
+  transform: rotate(180deg)
+}
+.result .enemy,.result .user{
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+.result img{
+  width: 100%;
+}

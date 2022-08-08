@@ -8,7 +8,7 @@
   padding: 0;
 }
 body{
-  background: rgba(57, 214, 145, 0.2);
+  background: #232222;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -18,12 +18,14 @@ body{
 .wrapper{
   width: 80%;
   height: 240px;
-  background: rgba(57, 214, 145, 1);
   border-radius: 40px;
   display: flex;
   flex-direction: column;
   position: relative;
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+ border-radius: 40px;
+background: #232222;
+box-shadow:  -15px 15px 30px #0e0e0e,
+             15px -15px 30px #383636;
 }
 .time{
   width: 100%;
@@ -36,15 +38,18 @@ body{
 .time .box{
   width: 160px;
   height: 160px;
-  background: #232323;
   margin: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   font-size: 3.8em;
-  border-radius: 25px;
-  color: rgba(57, 214, 145, 1);
+  border-radius: 40px;
+border-radius: 40px;
+background: linear-gradient(225deg, #252424, #201f1f);
+box-shadow:  -15px 15px 30px #0e0e0e,
+             15px -15px 30px #383636;
+  color: #1AE946;
 }
 .time .box h3{
   text-shadow: 0 0 15px rgba(57, 214, 145, 0.8)

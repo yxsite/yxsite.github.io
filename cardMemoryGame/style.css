@@ -1,0 +1,35 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#board{
+  width: calc(120px * 3);
+  height: calc(120px * 4);
+  display: grid;
+  grid-template-rows: 120px 120px 120px 120px;
+  grid-template-columns: 120px 120px 120px;
+  
+}
+#board img{
+  width: 100px;
+  height: 100px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 10px;
+  margin: auto;
+}
+.disable{
+  background: red;
+}
+#won{
+  display: none;
+}
